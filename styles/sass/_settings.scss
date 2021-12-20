@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "font-1";
+    src: url(/assets/fonts/Merriweather-Light.ttf);
+}
+@font-face {
+    font-family: "font-2";
+    src: url(/assets/fonts/Merriweather-Bold.ttf);
+}
+$font-1: "font-1", sans-serif; /*Text*/
+$font-2: "font-2", serif;   /*Titre*/
+
+$color-1: rgb(247, 245, 245);
+$color-2: rgb(10, 10, 10);
+$color-3: rgb(209, 209, 209);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $color-1;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+body {
+    background-image: url(/assets/images/bg.jpg) ;
+    background-repeat: repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: $font-2;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+p{
+    font-family: $font-1;
+    margin: 0 auto;
+}
+.fond-blanc{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
