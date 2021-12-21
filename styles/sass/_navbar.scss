@@ -39,6 +39,13 @@ nav {
                   }
                }
             }
+            a{
+               color: $color-1;
+
+               &:hover{
+                  color: $color-2;
+               }
+            }
             }
          
       
@@ -69,5 +76,4 @@ nav {
    }
 
 
-   /********** MEDIA **********/
 
