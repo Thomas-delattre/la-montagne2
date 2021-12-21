@@ -4,10 +4,10 @@
 }
 @font-face {
     font-family: "font-2";
-    src: url(/assets/fonts/Merriweather-Bold.ttf);
+    src: url(/assets/fonts/MerriweatherSans-ExtraBold.ttf);
 }
 $font-1: "font-1", sans-serif; /*Text*/
-$font-2: "font-2", serif;   /*Titre*/
+$font-2: "font-2", sans-serif;   /*Titre*/
 
 $color-1: rgb(247, 245, 245);
 $color-2: rgb(10, 10, 10);

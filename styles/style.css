@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "font-2";
-  src: url(/assets/fonts/Merriweather-Bold.ttf);
+  src: url(/assets/fonts/MerriweatherSans-ExtraBold.ttf);
 }
 
 /*Text*/
@@ -64,7 +64,7 @@ body:before {
 }
 
 h1 {
-  font-family: "font-2", serif;
+  font-family: "font-2", sans-serif;
   text-transform: uppercase;
   font-size: 4rem;
 }
@@ -126,7 +126,7 @@ img:hover {
   }
 }
 
-.header-haut .arrow {
+.header-haut .arrow a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +285,6 @@ nav {
 .section1 {
   text-align: center;
   width: 100%;
-  overflow: hidden;
 }
 
 .section1 h4 {
@@ -390,18 +389,21 @@ nav {
   }
 }
 
+.section1 .img-saut {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
 .section1 img {
-  margin: 0 auto;
-  max-width: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 100%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
 .section1 img:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(2) translate(20px);
+          transform: scale(2) translate(20px);
 }
 
 .section1 button {
@@ -454,8 +456,27 @@ nav {
   padding: 30px 0;
 }
 
+.section2 .img-right {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.section2 .img-left {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
 .section2 img {
-  max-width: 90%;
+  max-width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.section2 img:hover {
+  -webkit-transform: scale(2) translate(20px);
+          transform: scale(2) translate(20px);
 }
 
 .section2 p {
@@ -530,6 +551,7 @@ footer form input[type="text"],
 footer form textarea {
   background: none;
   border: 1px solid #d1d1d1;
+  resize: none;
 }
 
 footer form .submit-container {
