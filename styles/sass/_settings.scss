@@ -34,7 +34,26 @@ body {
     background-attachment:fixed;
     background-size: cover;
     min-height: 100vh;
-}
+    max-width: 1650px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #1e252d;
+        animation: animBefore 1.5s ease forwards;
+        animation-delay: 0.5s;
+    
+        @keyframes animBefore {
+          to {
+            opacity: 0;
+          }
+        }
+      }
+    }
 
 h1 {
     font-family: $font-2;
@@ -58,3 +77,9 @@ button{
     text-transform: uppercase;
     font-weight: bold;
 }
+img:hover{
+    
+        transform: scale(1);
+        transition: 0.5s ease;
+ }
+

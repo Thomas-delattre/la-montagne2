@@ -34,6 +34,33 @@ body {
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
+  max-width: 1650px;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #1e252d;
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
 }
 
 h1 {
@@ -59,6 +86,13 @@ button {
   padding: 15px 30px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .header-haut {
@@ -251,11 +285,18 @@ nav {
 .section1 {
   text-align: center;
   width: 100%;
-  position: relative;
+  overflow: hidden;
 }
 
 .section1 h4 {
   padding-top: 82px;
+  position: relative;
+}
+
+@media (max-width: 350px) {
+  .section1 h4 {
+    font-size: 0.8rem;
+  }
 }
 
 .section1 h4::before {
@@ -263,8 +304,26 @@ nav {
   border: 1px solid #d1d1d1;
   position: absolute;
   width: 30%;
-  left: 60%;
-  top: 7%;
+  right: 10%;
+  top: 90%;
+}
+
+@media (max-width: 670px) {
+  .section1 h4::before {
+    width: 27%;
+  }
+}
+
+@media (max-width: 669px) {
+  .section1 h4::before {
+    width: 24%;
+  }
+}
+
+@media (max-width: 350px) {
+  .section1 h4::before {
+    width: 17%;
+  }
 }
 
 .section1 h4:after {
@@ -273,7 +332,25 @@ nav {
   position: absolute;
   width: 30%;
   left: 10%;
-  top: 7%;
+  top: 90%;
+}
+
+@media (max-width: 670px) {
+  .section1 h4:after {
+    width: 27%;
+  }
+}
+
+@media (max-width: 669px) {
+  .section1 h4:after {
+    width: 24%;
+  }
+}
+
+@media (max-width: 350px) {
+  .section1 h4:after {
+    width: 17%;
+  }
 }
 
 .section1 h2 {
@@ -284,14 +361,47 @@ nav {
   font-weight: bold;
 }
 
+@media (max-width: 450px) {
+  .section1 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .section1 h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .section1 p {
   line-height: 30px;
   margin: 50px auto;
 }
 
+@media (max-width: 450px) {
+  .section1 p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .section1 p {
+    font-size: 0.8rem;
+  }
+}
+
 .section1 img {
   margin: 0 auto;
   max-width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.section1 img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .section1 button {
@@ -307,16 +417,6 @@ nav {
   background: #0a0a0a;
   color: #f7f5f5;
   cursor: pointer;
-}
-
-/********* MEDIA **************/
-@media (max-width: 350px) {
-  .section1 h4 {
-    font-size: 0.8rem;
-  }
-  .section1 h2 {
-    font-size: 1.5rem;
-  }
 }
 
 .section2 {
@@ -448,6 +548,14 @@ footer form .submit-container input[type="button"] {
   width: 180px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+footer form .submit-container input[type="button"]:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: #0a0a0a;
+  color: #f7f5f5;
+  cursor: pointer;
 }
 
 footer .right {

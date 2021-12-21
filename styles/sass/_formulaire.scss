@@ -40,7 +40,16 @@ footer {
           width: 180px;
           text-transform: uppercase;
           font-weight: bold;
-        }
+
+          &:hover{
+            transition: 0.5s ease;
+            background: $color-2;
+            color: $color-1;
+            cursor: pointer;
+
+          }
+
+          }
       }
     }
     .right {
@@ -96,14 +105,7 @@ footer {
             justify-content: center;
             align-items: center;
 
-
-          
-
-          
-
-
-
-            &:hover{
+              &:hover{
               transition: 00.5s ease;
               background: $color-1;
               color: $color-3;
@@ -115,4 +117,5 @@ footer {
     }
     }
     }
+    
   }
