@@ -1,15 +1,18 @@
 @font-face {
   font-family: "font-1";
-  src: url(/assets/fonts/Merriweather-Light.ttf);
+  src: url(../assets/fonts/Merriweather-Light.ttf);
 }
 
 @font-face {
   font-family: "font-2";
-  src: url(/assets/fonts/MerriweatherSans-ExtraBold.ttf);
+  src: url(../assets/fonts/MerriweatherSans-ExtraBold.ttf);
 }
 
 /*Text*/
 /*Titre*/
+html{
+  sroll
+}
 * {
   padding: 0;
   margin: 0;
