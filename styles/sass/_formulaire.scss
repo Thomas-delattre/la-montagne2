@@ -2,7 +2,7 @@ footer {
     background: rgb(233, 233, 233);
     min-height: 640px;
     width: 90%;
-    max-width: 1600px;
+    max-width: 100%;
     margin: 30px auto;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -80,6 +80,8 @@ footer {
           font-size: 0.8rem;
           line-height: 26px;
           color: rgb(138, 138, 138);
+          margin: 0;
+          text-align: center;
         }
       }
      

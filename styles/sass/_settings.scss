@@ -35,7 +35,7 @@ body {
     background-attachment:fixed;
     background-size: cover;
     min-height: 100vh;
-    max-width: 1650px;
+    max-width: 100%;
 
     &:before {
         content: "";
@@ -64,6 +64,7 @@ h1 {
 p{
     font-family: $font-1;
     margin: 0 auto;
+    max-width: 90%;
 }
 .fond-blanc{
     background-color: white;

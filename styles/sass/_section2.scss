@@ -35,9 +35,8 @@ img{
     max-width: 100%;
     transition: 0.5s ease;
     &:hover{
-      
-        -ms-transform: scale(2) translate(30px);  
-        transform: scale(2) translate(20px);
+         transform: scale(1.5); 
+         translate:(20px);
    
     }
 }
